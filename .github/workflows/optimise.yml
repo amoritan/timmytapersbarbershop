@@ -1,0 +1,38 @@
+name: Optimise media
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/media/*.png'
+      - 'content/media/*.jpeg'
+      - 'content/media/*.jpg'
+      - 'content/media/*.gif'
+      - 'content/media/*.webp'
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.2.0
+        with:
+          cache: npm
+      - run: npm install
+      - name: Install ImageMagick
+        run: sudo apt install imagemagick
+
+      - name: Optimise media
+        run: bin/optimise commit
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add --all
+          git commit -m "Optimised media files updated automatically"
+          git pull --rebase
+          git push
