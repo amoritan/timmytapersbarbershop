@@ -1,0 +1,54 @@
+{
+  "name": "timmytapersbarbershop",
+  "version": "1.0.0",
+  "description": "Timmy Taper’s Barbershop",
+  "main": "script.js",
+  "scripts": {
+    "start": "npm run build:html && npm run build:static && npm run build:js -- -w & npm run build:css -- -w & serve build",
+    "build": "npm run build:js && npm run build:css && npm run build:html && npm run build:static",
+    "build:js": "babel *.js --out-dir build --out-file-extension .min.js",
+    "build:css": "postcss --no-map --use autoprefixer postcss-nested --parser postcss-scss style.scss -o build/style.min.css",
+    "build:html": "bin/render",
+    "build:static": "cp -rf static/* build",
+    "publish": "npm install && npm run build",
+    "lint": "prettier --write . '!{build/**,content/**}'",
+    "optimise": "bin/optimise all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoritan/timmytapersbarbershop.github.io.git"
+  },
+  "author": "Andi Moritan <amoritan@me.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/amoritan/timmytapersbarbershop.github.io/issues"
+  },
+  "homepage": "https://timmytapersbarbershop.com",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "args": "^5.0.3",
+    "autoprefixer": "^10.4.14",
+    "babel-preset-minify": "^0.5.2",
+    "mustache": "^4.2.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.7",
+    "serve": "^14.2.0",
+    "shelljs": "^0.8.5",
+    "showdown": "^2.1.0",
+    "sitemap": "^7.1.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "babel-preset-minify"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
