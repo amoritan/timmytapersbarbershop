@@ -3,5 +3,9 @@
   "meta_description": "Timmy Taper’s Barbershop is located in Walthamstow E17 London.",
   "meta_website": "https://timmytapersbarbershop.com",
   "markdown_body": "",
-  "markdown_footer": ""
+  "markdown_footer": "",
+  "booking_url": "https://timmytapersltd.nearcut.com/book/shops/JQ57NK/services",
+  "i18n_name": "Timmy Taper’s Barbershop",
+  "i18n_heading": "Some cool quote that includes key words like E17, East London, Skinfade or something like that...",
+  "i18n_booking_action": "Book now"
 }

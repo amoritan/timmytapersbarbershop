@@ -10,11 +10,30 @@
     <meta property="og:image" content="{{{meta_image}}}" />
     <link rel="canonical" href="{{{meta_website}}}" />
     <link rel="stylesheet" type="text/css" href="/style.min.css" />
+    <link rel="preconnect" href="https://use.typekit.net" />
+    <link rel="preconnect" href="https://p.typekit.net" />
+    <link
+      rel="preload"
+      href="https://use.typekit.net/hst4yem.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://use.typekit.net/hst4yem.css"
+      />
+    </noscript>
     <title>{{meta_title}}</title>
   </head>
   <body>
     <header>
-      <h1><a href="/">{{meta_title}}</a></h1>
+      <h1>{{i18n_name}}</h1>
+      <h2>{{i18n_heading}}</h2>
+      <a class="button" href="{{{booking_url}}}" rel="canonical" target="_blank"
+        >{{i18n_booking_action}}</a
+      >
     </header>
     <main>{{{body}}}</main>
 
