@@ -3,9 +3,9 @@
 ////
 
 @mixin print-font {
-  font-family: 'veneer', sans-serif;
+  font-family: 'interstate-compressed', sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-weight: 400;
 }
 
 @mixin cursive-font {
@@ -27,34 +27,9 @@ body {
   background: $first-color;
   font-size: 1rem;
   margin: 0;
-}
 
-////
-// HEADER
-////
-
-header {
-  background: $second-color;
-  min-height: 90vh;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  h1 {
-    background-size: contain;
-    background: url('/assets/timmy-tapers-barbershop.svg') center no-repeat;
-    font-size: 1rem;
-    height: 16rem;
-    margin: 1rem auto 2rem auto;
-    text-indent: -9999rem;
-    width: 16rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    margin: 2rem 0;
+  a {
+    color: $first-color;
   }
 
   a.button {
@@ -67,5 +42,190 @@ header {
     padding: 0.75rem 2rem;
     text-align: center;
     text-decoration: none;
+  }
+}
+
+////
+// HEADER
+////
+
+header {
+  background-image: linear-gradient(
+      transparentize($second-color, 0.1) 10%,
+      transparentize($second-color, 0.5) 100%
+    ),
+    url('/assets/store.jpg');
+  background-size: cover;
+  min-height: 80vh;
+  padding: 1rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1rem), 0% 100%);
+
+  h1 {
+    background: url('/assets/timmy-tapers-barbershop.svg') center no-repeat;
+    background-size: contain;
+    font-size: 1rem;
+    height: 16rem;
+    margin: 1rem auto 2rem auto;
+    text-indent: -9999rem;
+    width: 16rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin: 2rem 0;
+  }
+}
+
+////
+// SECTION: SCHEDULE
+////
+
+section#schedule {
+  background: url('/assets/bad-trims-for-bad-boyz.svg') no-repeat;
+  background-color: $first-color;
+  background-position: center 4rem;
+  background-size: 14rem;
+  color: $third-color;
+  font-size: 2rem;
+  padding: 16rem 0 4rem 0;
+  h4 {
+    font-size: 1em;
+    font-weight: 800;
+    margin: 1rem;
+  }
+  ul {
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+
+    li {
+      margin: 0;
+    }
+  }
+}
+
+////
+// SECTION: ABOUT
+////
+
+section#about {
+  background: $second-color;
+  clip-path: polygon(
+    0 calc(0% + 1rem),
+    100% 0,
+    100% calc(100% - 1rem),
+    0% 100%
+  );
+  color: $first-color;
+  padding: 4rem 0;
+
+  img {
+    clip-path: circle(50% at 50% 50%);
+    display: block;
+    height: 12rem;
+    margin: 0 auto;
+    width: 12rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
+
+    strong {
+      font-weight: 800;
+    }
+  }
+}
+
+////
+// SECTION: LOCATION
+////
+
+section#location {
+  background: $first-color;
+  color: $third-color;
+  padding-bottom: 4rem;
+  position: relative;
+
+  a#map {
+    background: url('/assets/map.png') center no-repeat;
+    background-size: cover;
+    display: block;
+    height: 26rem;
+    text-indent: -9999rem;
+    width: 100%;
+  }
+  p {
+    bottom: 0;
+    font-size: 2rem;
+    margin: 0 1rem 1rem 1rem;
+    position: absolute;
+    white-space: pre-line;
+    width: calc(100% - 2rem);
+  }
+}
+
+////
+// FOOTER
+////
+
+footer {
+  background: $second-color;
+  clip-path: polygon(0 calc(0% + 1rem), 100% 0, 100% 100%, 0% 100%);
+  color: $first-color;
+  padding: 4rem 0 0.25rem 0;
+
+  h3 {
+    height: 6rem;
+    margin: 1rem auto;
+    max-width: 90%;
+    a {
+      background: url('/assets/at-timmytapersbarbershop.png') center no-repeat;
+      background-size: contain;
+      display: block;
+      height: 100%;
+      text-indent: -9999rem;
+      width: 100%;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+
+    li {
+      font-size: 1.25rem;
+      margin: 0;
+      padding: 0;
+
+      &::before {
+        content: '/';
+        padding: 0 0.5rem;
+      }
+      &:first-child {
+        &::before {
+          content: '';
+          padding: 0;
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  p {
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    margin: 4rem 1rem 1rem 1rem;
   }
 }
