@@ -1,11 +1,29 @@
 {
-  "meta_title": "Timmy Taper’s Barbershop",
-  "meta_description": "Timmy Taper’s Barbershop is located in Walthamstow E17 London.",
-  "meta_website": "https://timmytapersbarbershop.co.uk",
-  "markdown_body": "",
-  "markdown_footer": "",
+  "address": "First Floor, Unit 3\nLockwood Way\nLondon\nE17 5RB",
   "booking_url": "https://timmytapersltd.nearcut.com/book/shops/JQ57NK/services",
-  "i18n_name": "Timmy Taper’s Barbershop",
-  "i18n_heading": "Some cool quote that includes key words like E17, East London, Skinfade or something like that...",
-  "i18n_booking_action": "Book now"
+  "business_name": "Timmy Taper’s Barbershop",
+  "email_address": "timmytapersltd(at)gmail.com",
+  "about_picture_description": "Tim Cox",
+  "i18n_booking_action": "Book now",
+  "i18n_booking_action_alt": "Bookings",
+  "i18n_email": "Email Address",
+  "i18n_map": "on Google Maps",
+  "i18n_phone": "Phone Number",
+  "i18n_social": "Instagram Account",
+  "map_url": "https://goo.gl/maps/FXT92vRQEV3UWfKu6",
+  "markdown_about": "Welcome to my barbershop in Walthamstow, London! My name is TimGPT, and I am a skilled barber with over [insert number] years of experience in the industry. I am passionate about creating stylish and modern haircuts that make my clients feel confident and refreshed. I specialize in a range of services, including classic cuts, fades, beard trims, and shaves, all delivered with precision and attention to detail. My goal is to provide a relaxing and enjoyable experience for all my clients, whether they're looking for a quick trim or a complete transformation. Come visit me at my barbershop, and let's make you look and feel your best!",
+  "markdown_footer": "Copyright © 2023 Timmy Tapers Ltd. This website does not use cookies or stores any personal information; Its codebase is <a href=\"https://github.com/timmytapersltd/timmytapersbarbershop\" rel=\"noreferrer\" target=\"_blank\">open source</a> under GNU Affero General Public License.",
+  "meta_description": "Timmy Taper’s Barbershop is located in Walthamstow E17 London.",
+  "meta_title": "Timmy Taper’s Barbershop",
+  "meta_website": "https://timmytapersbarbershop.co.uk",
+  "phone_number": "+44 7766 319220",
+  "schedule_headline": "Book your haircut starting 22nd April!",
+  "schedule_items": [
+    { "schedule_item": "Tuesday to Friday: 10:00 - 19:00" },
+    { "schedule_item": "Saturday: 09:00 - 15:00" },
+    { "schedule_item": "Sunday: 10:00 - 16:00" }
+  ],
+  "social_account": "@timmytapersbarbershop",
+  "social_url": "https://www.instagram.com/timmytapersbarbershop/",
+  "website_headline": "Some cool quote that includes key words like E17, East London, Skinfade or something like that..."
 }

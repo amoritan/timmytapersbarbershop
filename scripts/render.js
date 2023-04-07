@@ -19,8 +19,10 @@ const render = async () => {
 
   const websiteData = {
     ...baseWebsiteData,
-    body: showdownConverter.makeHtml(baseWebsiteData.markdown_body),
+    about: showdownConverter.makeHtml(baseWebsiteData.markdown_about),
     footer: showdownConverter.makeHtml(baseWebsiteData.markdown_footer),
+    email_url: `mailto:${baseWebsiteData.email_address.replace('(at)', '@')}`,
+    phone_url: `tel:${baseWebsiteData.phone_number.replace(/[^0-9+]/g, '')}`,
   };
 
   const websiteOutput = mustache.render(baseTemplate, websiteData);

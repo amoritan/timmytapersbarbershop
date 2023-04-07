@@ -29,15 +29,71 @@
   </head>
   <body>
     <header>
-      <h1>{{i18n_name}}</h1>
-      <h2>{{i18n_heading}}</h2>
+      <h1>{{business_name}}</h1>
+      <h2>{{website_headline}}</h2>
       <a class="button" href="{{{booking_url}}}" rel="canonical" target="_blank"
         >{{i18n_booking_action}}</a
       >
     </header>
-    <main>{{{body}}}</main>
+    <main>
+      <section id="schedule">
+        <h4>{{schedule_headline}}</h4>
+        <ul>
+          {{#schedule_items}}
+          <li>{{schedule_item}}</li>
+          {{/schedule_items}}
+        </ul>
+      </section>
+      <section id="about">
+        <img
+          src="https://placehold.co/400x400.webp"
+          alt="{{about_picture_description}}"
+        />
+        {{{about}}}
+      </section>
+      <section id="location">
+        <a id="map" href="{{{map_url}}}" rel="noreferrer" target="_blank"
+          >{{business_name}} {{i18n_map}}</a
+        >
+        <p>{{{address}}}</p>
+      </section>
+    </main>
 
-    <footer>{{{footer}}}</footer>
+    <footer>
+      <h3>
+        <a
+          href="{{{social_url}}}"
+          title="{{business_name}} {{i18n_social}}"
+          rel="noreferrer"
+          target="_blank"
+          >{{social_account}}</a
+        >
+      </h3>
+      <ul>
+        <li>
+          <a
+            id="phone"
+            href="{{{phone_url}}}"
+            title="{{business_name}} {{i18n_phone}}"
+            rel="noreferrer"
+            >{{phone_number}}</a
+          >
+        </li>
+        <li>
+          <a
+            id="email"
+            href="{{{email_url}}}"
+            title="{{business_name}} {{i18n_email}}"
+            rel="noreferrer"
+            >{{email_address}}</a
+          >
+        </li>
+      </ul>
+      <a class="button" href="{{{booking_url}}}" rel="canonical" target="_blank"
+        >{{i18n_booking_action_alt}}</a
+      >
+      {{{footer}}}
+    </footer>
 
     <script type="text/javascript" src="/script.min.js"></script>
   </body>
