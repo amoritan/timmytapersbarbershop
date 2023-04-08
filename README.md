@@ -2,7 +2,7 @@
 
 > To visit the production version of the website, go to [timmytapersbarbershop.co.uk](https://timmytapersbarbershop.co.uk)
 
-![Netlify](https://img.shields.io/netlify/<>?label=build) ![Website](https://img.shields.io/website/https/timmytapersbarbershop.co.uk.svg) ![GitHub](https://img.shields.io/github/license/amoritan/timmytapersbarbershop)
+![Netlify](https://img.shields.io/netlify/5137e6aa-7461-4733-879d-59c523aa6f7e?label=build) ![Website](https://img.shields.io/website/https/timmytapersbarbershop.co.uk.svg) ![GitHub](https://img.shields.io/github/license/timmytapersltd/timmytapersbarbershop)
 
 This is an open-source website, you can redistribute its source code and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation.
 

@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amoritan/timmytapersbarbershop.github.io.git"
+    "url": "git+https://github.com/timmytapersltd/timmytapersbarbershop.github.io.git"
   },
   "author": "Andi Moritan <amoritan@me.com>",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/amoritan/timmytapersbarbershop.github.io/issues"
+    "url": "https://github.com/timmytapersltd/timmytapersbarbershop.github.io/issues"
   },
   "homepage": "https://timmytapersbarbershop.co.uk",
   "devDependencies": {
