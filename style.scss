@@ -185,7 +185,13 @@ section#location {
   position: relative;
 
   a#map {
-    background: url('/assets/map.png') center no-repeat;
+    background-image: image-set(
+      url('/assets/map-small.webp') 1x,
+      url('/assets/map-small@2x.webp') 2x,
+      url('/assets/map-small@3x.webp') 3x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: block;
     height: 26rem;
@@ -193,6 +199,10 @@ section#location {
     width: 100%;
   }
   p {
+    background-image: linear-gradient(
+      transparentize($first-color, 1),
+      $first-color 50%
+    );
     bottom: 0;
     font-size: 2rem;
     margin: 0 1rem 1rem 1rem;
@@ -207,6 +217,11 @@ section#location {
 
     a#map {
       height: 100%;
+      background-image: image-set(
+        url('/assets/map-large.webp') 1x,
+        url('/assets/map-large@2x.webp') 2x,
+        url('/assets/map-large@3x.webp') 3x
+      );
       background-position: right center;
     }
     p {
