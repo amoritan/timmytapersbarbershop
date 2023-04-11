@@ -1,6 +1,6 @@
 {
   "meta_website": "https://timmytapersbarbershop.co.uk",
-  "meta_description": "Timmy Taper’s Barbershop is located in Walthamstow E17 London",
+  "meta_description": "Timmy Taper’s Barbershop - Walthamstow E17 - Blackhorse - First Floor, Unit 3 Lockwood Way London E17 5RB. Good tunes, great trimz & cold beer.",
   "i18n_booking_action_alt": "Bookings",
   "booking_url": "https://timmytapersltd.nearcut.com/book/shops/JQ57NK/services",
   "about_picture_description": "Tim Cox",
@@ -22,7 +22,7 @@
       "schedule_item": "Sunday: 10:00 - 16:00"
     }
   ],
-  "website_headline": "Some cool quote that includes key words like E17, East London, Skinfade or something like that...",
+  "website_headline": "Come get a trim from your friendly local barber. Good tunes, great trimz & cold beer.",
   "phone_number": "+44 7766 319220",
   "i18n_email": "Email Address",
   "social_account": "@timmytapersbarbershop",
@@ -31,5 +31,5 @@
   "markdown_about": "Welcome to my barbershop in Walthamstow, London! My name is TimGPT, and I am a skilled barber with over [insert number] years of experience in the industry. I am passionate about creating stylish and modern haircuts that make my clients feel confident and refreshed. I specialize in a range of services, including classic cuts, fades, beard trims, and shaves, all delivered with precision and attention to detail. My goal is to provide a relaxing and enjoyable experience for all my clients, whether they're looking for a quick trim or a complete transformation. Come visit me at my barbershop, and let's make you look and feel your best!",
   "i18n_booking_action": "Book now",
   "social_url": "https://www.instagram.com/timmytapersbarbershop/",
-  "meta_title": "Timmy Taper’s Barbershop"
+  "meta_title": "Timmy Taper’s Barbershop - Walthamstow E17, London"
 }
