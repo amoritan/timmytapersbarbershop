@@ -57,10 +57,11 @@ body {
 
 header {
   background-image: linear-gradient(
-      transparentize($second-color, 0.1) 10%,
-      transparentize($second-color, 0.5) 100%
+      transparentize($second-color, 0.125) 10%,
+      transparentize($second-color, 0.3) 100%
     ),
-    url('/assets/store.jpg');
+    url('/assets/background-picture.webp');
+  background-position: center;
   background-size: cover;
   min-height: 80vh;
   padding: 1rem 1rem 4rem 1rem;
@@ -148,6 +149,7 @@ section#about {
   padding: 4rem 0;
 
   img {
+    background: $third-color;
     clip-path: circle(50% at 50% 50%);
     display: block;
     height: 12rem;
