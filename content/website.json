@@ -13,17 +13,17 @@
   "address": "First Floor, Unit 3\nLockwood Way\nLondon\nE17 5RB",
   "schedule_items": [
     {
-      "schedule_item": "Tuesday to Friday: 10:00 - 19:00"
+      "schedule_item": "Saturday: 09:00 - 15:00"
     },
     {
-      "schedule_item": "Saturday: 09:00 - 15:00"
+      "schedule_item": "Tuesday to Friday: 10:00 - 19:00"
     },
     {
       "schedule_item": "Sunday: 10:00 - 16:00"
     }
   ],
   "website_headline": "Come get a trim from your friendly local barber. Good tunes, great trimz & cold beer.",
-  "phone_number": "+44 7766 319220",
+  "phone_number": "+447459532415",
   "i18n_email": "Email Address",
   "social_account": "@timmytapersbarbershop",
   "i18n_map": "on Google Maps",
